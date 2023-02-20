@@ -22,7 +22,4 @@ const container = React.createElement("div",{
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(container);
-//this commit is for bundler!!
-// file is changed
-// again changed
-//3rd commit
+//2nd commit
