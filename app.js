@@ -12,10 +12,15 @@ const heading2  = React.createElement("h2",{
     className:"myClass",
     
 },"Heading 2");
+const heading3  = React.createElement("h3",{
+    id:"little1",
+    className:"myClass",
+    
+},"Heading 3");
 
 const container = React.createElement("div",{
     id:"container",
-},[heading1,heading2]);
+},[heading1,heading2,heading3]);
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
