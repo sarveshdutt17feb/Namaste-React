@@ -1,0 +1,96 @@
+Chapter 02 - Assignment - Igniting our App
+
+Please Note: Write the answers and code on your own while finishing your assignments. Try to put down your thoughts into words by yourself in your own words. (This will help you develop muscle memory and you will remember all the concepts properly) ✌
+
+# Theory Assignment:
+●	- What is `NPM`?
+
+	NPM is a package manager we need it in our project because alone react can not make full fledged production ready application or your application performant so we need other packages as well for hot module replacement , minify your files, consistent caching( cache things up) so to manage all those packages we need NPM.
+
+●	- What is `Parcel/Webpack`? Why do we need it?
+
+	Parcel is bundler and bunder is a development tool that combines your Javascript code into single one and that is production ready loadable in browser.
+	We need parcel for creating the server , file watching algorithm , hot module replacement , caching things up , dev and production ready build, zero config, minification of your files.
+
+●	- What is `.parcel-cache`
+
+	Parcel need a space to  minify your file ,file watching ,hrm so where it does in parcel -cache
+
+●	- What is `npx` ?
+
+	Npx stands for node package execute that it tells node package to execute entry point using parcel ex – npx parcel index.html
+
+●	- What is difference between `dependencies` vs `devDependencies`
+
+	Our project has  has some some dependency( our project need other package to make our react app performant) so it is dependent on the something i.e dependencies and in Dev dependency our project is having dependency in dev environment for minification ,hrm , file watching etc
+
+●	- What is Tree Shaking?
+
+	Tree shaking is a term used within a JavaScript context to describe the removal of dead code.
+	In modern JavaScript applications, we use module bundlers (e.g., webpack or Rollup) to automatically remove dead code when bundling multiple JavaScript files into single files. This is important for preparing code that is production ready, for example with clean structures and minimal file size.
+●	- What is Hot Module Replacement?
+
+	HMR improves the development experience by updating modules in the browser at runtime without needing a whole page refresh.
+
+●	- List down your favourite 5 superpowers of Parcel and describe any 3 of them in your own words.
+	Hrm , minification ,bundling things up , consistent caching , creating the server , file watching algo , dev and production build.
+
+o	Minification  -  it redues the size of the file by minifieing your code.
+o	File watching  -  it check instantly if something is upadated in any file.
+o	Create server –  It create server which serves us to run application.
+
+●	- What is `.gitignore`? What should we add and not add into it?
+
+	.gitignore is extension in vs code which is used to have the files that you don’t want to push onto GIT.
+
+●	- What is the difference between `package.json` and `package-lock.json`
+
+	In Package .json folder we have all the dependency( all the info about packages parcel and react) and project name ,Git repository name , jest etc .
+	In package-lock.json  - It is a very important file we can push it on to github. It locks the version of parcel and react and keeps the track of version ,It also manages the hash of it (packages version) .it maintains the integrity and ensure that version of( parcel and react and others  )  ruuning on dev machine and production same or not. 
+
+●	- Why should I not modify `package-lock.json`?
+
+	Because it keeps the track of packages version and hashes and many more.
+
+●	- What is `node_modules` ? Is it a good idea to push that on git?
+
+	We can say that it is the database for our packages and where the super power is coming from.It is huge in itself . It can be regenerated using package.json and package-lock.json ( npm install -D parcel and ..).we should not push it on Git hub.
+
+●	- What is the `dist` folder?
+
+	Dist folder is for minfied project files which parcel does.
+
+●	- What is `browserlists`
+	Browserlist is for compatibility of  older version of browser 
+
+
+“Read about different  bundlers: vite, webpack, parcel”
+
+	Bundler is development tool that combines the js code into single on.It is used to production build loadable in browser.
+
+
+
+●	Read about: ^ - caret and ~ - tilda
+	^ (caret) it is for automatically upgrading to minor version of packages (react and parcel)
+	~(tilde)  is for upgrading to mazor version
+●	Read about Script types in html (MDN Docs)
+The types attribute in script tells what type file like is type =”module” it menas it is a module.
+
+
+# Project Assignment:
+-	In your existing project
+●	- intialize `npm` into your repo
+●	- install `react` and `react-dom`
+●	- remove CDN links of react
+●	- install parcel
+●	- ignite your app with parcel
+●	- add scripts for “start” and “build” with parcel commands
+●	- add `.gitignore` file
+●	- add `browserlists`
+●	- build a production version of your code using `parcel build`
+
+# References
+●	Creating your own create-react-app
+●	Parcel Documentation
+●	Parcel on Production
+●	BrowsersList: https://browserslist.dev/
