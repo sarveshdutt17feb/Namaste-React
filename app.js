@@ -1,25 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-
-const heading1  = React.createElement("h1",{
-    id:"little",
-    className:"myClass",
-    
-},"Heading 1 for parcel");
-const heading2  = React.createElement("h2",{
-    id:"little1",
-    className:"myClass",
-    
-},"Heading 2");
+// React.createElement ===(gives us)==obj ==>(coverted) in html dom
 
 
-const container = React.createElement("div",{
-    id:"container",
-},[heading1,heading2]);
+//jsx ==React.createElement ==object ==html(dom)
+const title  = (
+<h1 id="title" key="h2" >
+    Namaste react  
+    </h1>
+);
 
+const HeaderComponent = ()=>{
+     return (
+        <div>
+            {title}
+            <h2>namaste react from fumctional component</h2>
+            <h2>this is h2 tag</h2>
+        </div> 
+     ); 
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(container);
+root.render(<HeaderComponent/>);
 // commit new
