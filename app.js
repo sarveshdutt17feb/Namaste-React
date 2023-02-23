@@ -2046,13 +2046,14 @@ const Body = () => {
     <div className="restaurant-list"> 
       {
         restaurantList.map((restaurant)=>{
-          return <RestaurantCard {...restaurant.data}/>  
+          return <RestaurantCard {...restaurant.data} key={restaurant.data.id}/>  
         })
       }
     </div> 
   );
 };
 
+// no key <<<<<<<<<<<<<<index (use only if you don't have anything) <<<<<<<<< unique key (Best Practice)
 const Footer = () => {
   return (
     <h4>Footer</h4>
